@@ -1,0 +1,423 @@
+@font-face {
+    font-family: "PlaystationLight";
+    src: url("../fonts/SSTLight.TTF");
+}
+@font-face{
+    font-family: "PlaystationBold";
+    src: url("../fonts/SSTBold.TTF");
+}
+
+
+*{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    
+    width: 100vw;
+    
+}
+
+main{
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: #000 0px 10px 3px;
+  
+}
+
+.container_content{
+  
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.product_name,.product_description,.btns-options{
+    
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_name{
+    
+    
+    width: calc(100%/2);
+
+}
+
+.product_name a{
+    width: 100%;
+   height: 90px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+
+.product_description ,.part1 , .part3{
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 50px;
+    text-align: center;
+   
+}
+
+.part1{
+
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: linear 500ms opacity;
+}
+
+
+.part3{
+   
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.part3 .ssd , .part3 .es{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.part3 .ssd img , .part3 .es img{
+    display: flex;
+    width: 15%;
+}
+
+.part3 .ssd,.part3 .es{
+    padding: 10px;
+    width: 40%;
+}
+
+
+.product_description > *{
+    margin: 10px 0;
+}
+
+.product_description .part1 h1{
+    font-family: "PlaystationBold";
+}
+
+.product_description .part1 p{
+    font-family: "PlaystationLight";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_description .part1 span{
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+
+
+.container_img{
+    flex: 1;
+    height: inherit;
+    display: flex;
+  
+    background:linear-gradient(to left bottom, #026DB3 10%,transparent 60%);
+}
+
+.btns-options{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.btns-options  *{
+    font-family: PlaystationBold;
+    border-radius: 10px;
+    font-size: .9em;
+    background-color: transparent;
+}
+
+.btns-options > a input,.btns-options input{
+    cursor: pointer;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.games{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100vh;
+    transition: ease 3s all;
+}
+
+.games .slider_games div{
+    transition: ease all 3ms;
+}
+
+.games div img{
+    transition: ease all 3ms;
+}
+footer{
+    background-color: #00439C;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container_footer{
+    display: flex;
+    width: 70%;
+    height: 100%;
+   
+
+}
+
+ .logos,.links{
+
+   flex: 1;
+  
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+.logos{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_footer .sie,.container_footer .ps{
+    display: flex;
+    align-items: center;
+   
+   height: 50%;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+.ps div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imgWorld{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.container_footer .sie img{
+    width: 130px;
+}
+
+.container_footer .ps p{
+    font-size: 15px;
+}
+
+.container_footer  p{
+ margin-top: 9px;
+}
+
+
+.btns-options a > input,.btns-options > input{
+   padding: 2em;
+}
+
+.part1 video,#video_game{
+    border-radius: 12px;
+    padding: 1px;
+    box-shadow: 0px 0px 10px white;
+}
+
+
+
+.btns-options  *:hover {
+    background: linear-gradient(310deg, #026db3, transparent);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    -o-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+.content_games{
+    display: flex;
+    position: absolute;
+    left: -600px;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+   flex: 1;
+   box-shadow: rgba(0, 0, 0, .5) 2px 0px 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease 500ms all;
+}
+
+.content_games > *{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_games div:nth-child(1){
+    flex: 1;
+}
+
+.content_games div:nth-child(2){
+    flex: 3;
+    
+}
+
+.content_games div:nth-child(2){
+    text-align: justify;
+    line-height: 22px;    
+}
+
+.slider_games{
+    display: flex;
+    transition: ease 3s all;
+    height: 100%;
+}
+
+.slider_games > *{
+    transition: ease 3s all;
+}
+
+.about_game{
+    position: absolute;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 10px 0 0 10px;
+   
+}
+
+.about_game > a{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.about_game > a:hover{
+    background-color: rgba(255, 255, 255, .6);
+    transition: ease 300ms all;
+}
+
+
+.content_media{
+    opacity: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    transition: ease 300ms all;
+    align-items: center;
+    justify-content: center;
+}
+
+ #video_game{
+    transition: ease 300ms all;
+    width: 50%;
+}
+
+
+
+.conteiner_links{
+    width: 95%;
+    height: 95%;
+
+    display: flex;
+}
+
+.conteiner_links > ul{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 10px;
+    margin-top:50px ;
+}
+
+.conteiner_links > ul li{
+    margin: 5px 0;
+    font-size: 12px;
+}
