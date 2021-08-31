@@ -1,5 +1,5 @@
 let sliderGames = document.getElementsByClassName("slider_games")[0];
-let path = '../assets/images/games/', videoPath = '../assets/media/games/';
+let path = './assets/images/games/', videoPath = '../assets/media/games/';
 let backgroundGames = [
     {
         title: "Days Gone",
